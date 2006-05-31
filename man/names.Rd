@@ -11,15 +11,12 @@
 \usage{
 \method{names}{tensor}(x)
 \method{names}{tensor}(x) <- value
-\method{dimnames}{tensor}(X,...) 
-\method{dimnames}{tensor}(X,...) <- value
-\method{dim}{tensor}(X,...) <- value
+\method{dimnames}{tensor}(x) 
+\method{dimnames}{tensor}(x) <- value
+\method{dim}{tensor}(x) <- value
 }
 \arguments{
   \item{x}{a tensor object}
-  \item{X}{a tensor object}
-  \item{\dots}{further arguments to other instances of the generic
-    function}
   \item{value}{The new value. If this is a named list it replaces the
   names of the dimensions. If its an unnamed list it gets the names of
   the dimensions.}

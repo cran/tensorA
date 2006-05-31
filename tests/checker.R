@@ -276,7 +276,7 @@ checker(einstein.tensor(A,G),einstein.tensor(G,A))
 
 checker(einstein.tensor(A,G),einstein.tensor(G,A))
 
-checker(einstein.tensor(einstein.tensor(A,G),inv.tensor(G,c("a","b"),by="I"),by=c("I",)),rep(A,dim(G)["I"],1,"I"))
+checker(einstein.tensor(einstein.tensor(A,G),inv.tensor(G,c("a","b"),by="I"),by=c("I")),rep(A,dim(G)["I"],1,"I"))
 
 einstein.tensor(A,G)
 

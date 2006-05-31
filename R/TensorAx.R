@@ -177,30 +177,30 @@ names.tensor <- function(x) {
   x
 }
 
-"dim<-.tensor" <- function(X,...,value) {
+"dim<-.tensor" <- function(x,value) {
   if( length(value) > 0 )
     NextMethod()
-  else if( length(X) > 1 )
+  else if( length(x) > 1 )
     stop("Not fitting dimension")
   else
     NextMethod(value=NULL)
 }
 
-"dimnames<-.tensor" <- function(X,...,value) {
+"dimnames<-.tensor" <- function(x,value) {
   if( is.null(value) )
-    value <- rep(list(NULL),length(dim(X)))
-  names(value) <- names(dim(X))
-  if( is.null(dim(X)) )
+    value <- rep(list(NULL),length(dim(x)))
+  names(value) <- names(dim(x))
+  if( is.null(dim(x)) )
     return(NULL)
-  NextMethod(X,value)
+  NextMethod(x,value)
 }
 
-dimnames.tensor <- function(X,...) {
-  dn <- NextMethod("dimnames",X,...)
+dimnames.tensor <- function(x) {
+  dn <- NextMethod("dimnames",x)
   if( is.null(dn) )
-    return( structure(rep(list(NULL),length(dim(X))),names=names(X)) )
+    return( structure(rep(list(NULL),length(dim(x))),names=names(x)) )
   else
-    structure(dn,names=names(X))
+    structure(dn,names=names(x))
 }
 
 
