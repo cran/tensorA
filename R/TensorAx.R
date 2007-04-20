@@ -628,7 +628,7 @@ delta.tensor <-function(d,mark="'",dn=NULL,by=NULL) {
   if( is.null(by) )
     gsi.debugr(to.tensor(c(X),c(d,mark(d,mark)),ndimnames=c(ndimnames,ndimnames)))
   else
-    gsi.debugr(mul.tensor(to.tensor(c(X),c(d,mark(d,mark)),ndimnames=c(ndimnames,ndimnames)),c(),one.Tensor(d2,ndimnames2)))
+    gsi.debugr(mul.tensor(to.tensor(c(X),c(d,mark(d,mark)),ndimnames=c(ndimnames,ndimnames)),c(),one.tensor(d2,ndimnames2)))
     
 }
 
@@ -1131,7 +1131,7 @@ as.tensor.tensor <- function(X,...) {X}
 slice.tensor <-function(X,i,what,drop=FALSE) {
   i <- toPos.tensor(X,i)
   if( length( i ) > 1 ) {
-    error("multiple slice not supported yet")
+    stop("multiple slice not supported yet")
   }
   d <- dim(X)
   dn <- dimnames(X)
@@ -1510,7 +1510,7 @@ riemann.tensor <- function(...,only=NULL,by=NULL) {
     ten <- ts[[k]]
     nam <- nams[k]
     if( !is.null(nam) && nam=="diag" ) {
-      tmp <- diagmul.tensor(tmp,contranames(names(ten)),ten,names(ten))
+      tmp <- diagmul.tensor(tmp,contraname(names(ten)),ten,names(ten))
     } else if( identical(is.character(ten),TRUE) ) {
       olds <- match(nam,names(tmp))
       news <- match(contraname(ten),names(tmp))
