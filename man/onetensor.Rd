@@ -17,8 +17,6 @@ one.tensor(d=NULL,dn=NULL)
 \details{
   \deqn{E_{i_1\ldots i_n}=1}
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

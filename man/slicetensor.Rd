@@ -37,9 +37,8 @@ slice.tensor(X,i,what,drop=FALSE)
   a new tensor with dimensions renamed or individual levels selected
 }
 \details{
-   
-}
-\references{
+  The functions allow to rename dimensions and to take select a part of
+  the tensor.
 }
 \seealso{
   \code{\link{einstein.tensor}}

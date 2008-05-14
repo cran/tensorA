@@ -26,7 +26,9 @@ solve.tensor(a,b,i,j=i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
 }
 \details{
   A tensor can be seen as a linear mapping of a tensor to a tensor. Let
-  denote \eqn{R_i} the space of real tensors with dimensions \eqn{i_1...i_d}.
+  denote \eqn{R_i} the space of real tensors with dimensions
+  \eqn{i_1...i_d}.
+  \itemize{
   \item{solve.tensor}{Solves the equation for
   \eqn{a_{i_1...i_dk_1...k_p}}, \eqn{b_{j_1...j_dl_1...l_q}} and
   \eqn{x_{k_1...k_pl_1...l_q}} the equation  
@@ -34,8 +36,7 @@ solve.tensor(a,b,i,j=i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
     a_{i_1...i_dk_1...k_p}x_{k_1...k_pl_1...l_q}=
     b_{j_1...j_dl_1...l_q}}.
   }
-}
-\references{
+  }
 }
 \seealso{
   \code{\link{to.tensor}}, \code{\link{svd.tensor}},
@@ -43,8 +44,6 @@ solve.tensor(a,b,i,j=i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
   \code{\link{power.tensor}} 
 }
 \examples{
-
-
 R1  <- matrix(rnorm(9),nrow=3)
 R1i <- solve(R1)
 R2 <- to.tensor(R1,c(a=3,b=3),what=1:2)

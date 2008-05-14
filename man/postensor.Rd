@@ -20,8 +20,6 @@ pos.tensor(d)
   tensors are stored according to the R-convention that the leftmost
   index varies fastest.
 }
-\references{
-}
 \seealso{
   \code{\link{reorder.tensor}}
 }

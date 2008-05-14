@@ -664,3 +664,10 @@ checker( names(A|c("$","b","c","a")), c("b","c","a"))
 checker( names(A|c("b.c.a")), c("b","c","a"))
 
 
+# slice.tensor<-
+#A <- to.tensor(1:24,c(a=2,b=3,c=4))
+#B <- to.tensor(25:48,c(a=2,b=3,c=4))
+#slice.tensor(A,"c",1:2)<- slice.tensor(B,"c",1:2)
+#checker(slice.tensor(A,"c",1:2),slice.tensor(B,"c",1:2))
+#slice.tensor(A,"b",2)<- slice.tensor(B,"b",2)
+#checker(slice.tensor(A,"b",2),slice.tensor(B,"b",2))

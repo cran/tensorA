@@ -51,10 +51,6 @@ V_{ab i_1,...,i_kj_1,...,j_l}=\frac1{n-1}\sum_{a}
   
 
 }
-
-\references{
-  
-}
 \seealso{
   \link{tensorA}
 }

@@ -27,8 +27,6 @@ diagmul.tensor(X,i=names(D),D,j=i,by=NULL)
   \deqn{D_{j_1\ldots j_d}} than the result is:
   \deqn{E_{i_1\ldots i_d k_1 \ldots k_d}=X_{i_1\ldots i_d k_1 \ldots k_d}D_{j_1\ldots j_d}}
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

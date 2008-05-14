@@ -29,8 +29,6 @@
   the remaining dimensions keep their relative sequence and follow at
   the end of the dimension attribute.
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

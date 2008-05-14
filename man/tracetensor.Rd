@@ -38,8 +38,6 @@ trace.tensor(X,i,j)
       }
   }}
 }
-\references{
-}
 \seealso{
   \code{\link{mul.tensor}}, \code{\link{to.tensor}}
 }

@@ -18,7 +18,7 @@
   This function is called for a pretty output of a tensor, just try it.
 }
 \seealso{
-  \code{\link[base]{ftable}}
+  \code{\link{ftable}}
 }
 \examples{
 A <- to.tensor(1:20,c(U=2,V=2,W=5))

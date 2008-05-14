@@ -36,8 +36,6 @@ add.tensor(X,Y,op="+",only=NULL)
   name are identified. If dimensions are missing in one of the tensors
   it is correspondingly repeated. 
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

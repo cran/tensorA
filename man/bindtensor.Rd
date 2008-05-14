@@ -18,11 +18,10 @@ bind.tensor(A,dA=NULL,B,dB=dA)
   a tensor with the tensors combined to one
 }
 \details{
-}
-\references{
+  This function works like a cbind or rbind function for tensors.  
 }
 \note{
-  binding does not preserve the sequence of the entries.
+  binding does not preserve the sequence of the dimensions.
 }
 \seealso{
   \code{\link{base}{cbind}}

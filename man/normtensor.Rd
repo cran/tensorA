@@ -24,6 +24,7 @@ opnorm(X,...)
     in parallel.}
 }
 \value{
+  
   \item{norm}{either a single number giving the norm of the tensor or a tensors with
   the dimensions i removed
   containing the individual norms in each entry.}
@@ -33,6 +34,8 @@ opnorm(X,...)
 }
 }
 \details{
+  
+  \itemize{
   \item{norm}{
     The function computes the Euclidean norm, which is the square root
     over the sum of all entries and not the operator norm. }
@@ -40,8 +43,9 @@ opnorm(X,...)
     The function computes the Euclidean operator norm, which is largest
     factor in changing the Euclidean norm, when mapped with the linear
     mapping corresponding to the tensor. }
-    }
+  }
 }
+
 \seealso{
   \code{\link{to.tensor}}
 }

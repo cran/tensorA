@@ -31,8 +31,6 @@
   case of {rep(x,c(3,2))}. If the second is wanted it can be forced by
   \code{rep(x,c(3),NA)} through setting the name argument to NA. 
 }
-\references{
-}
 \seealso{
   \code{\link[base]{rep}}
 }

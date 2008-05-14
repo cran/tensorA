@@ -31,8 +31,6 @@ mark(X,mark,...)
   rule will make use of marks to distinguish covariate and contravariate
   dimensions.
 }
-\references{
-}
 \seealso{
    \code{\link{delta.tensor}}, \code{\link{diag.tensor}} 
 }
@@ -42,4 +40,4 @@ A <- to.tensor(1:4,c(a=2,b=2))
 A %e% mark(A)
 }
 \author{K. Gerald van den Boogaart}
-\keyword{}
+\keyword{arith}

@@ -24,8 +24,6 @@ to.matrix.tensor(X,i,j,by=NULL)
   function computes the corresponding matrix, mapping the entries of the
   domain tensor to the entries of the image tensor.
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}, \code{\link{solve.tensor}},
   \code{\link{inv.tensor}}, \code{\link{svd.tensor}}

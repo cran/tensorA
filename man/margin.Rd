@@ -21,8 +21,6 @@ margin.tensor(X,i=NULL,by=NULL)
 \details{
   This is a tensor multiplication with the \eqn{1_i}{1_i} tensor.
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

@@ -178,8 +178,6 @@
   multiplication with the geometry tensors \eqn{g_i^{\;j}}{g_i^j}. This
   can be done through \code{\link{drag.tensor}}.
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}, \code{\link{mul.tensor}} ,
   \code{\link{einstein.tensor}}, \code{\link{add.tensor}},

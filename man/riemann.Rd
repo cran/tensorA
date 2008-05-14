@@ -51,8 +51,6 @@ riemann.tensor(...,only=NULL,by=NULL)
   visible in the result or inducing a multiplication according to the
   Riemann convention later if the other shows up. 
 }
-\references{
-}
 \seealso{
   \code{\link{mul.tensor}}, \code{\link{to.tensor}}, \code{\link{riemann.tensor}}
 }

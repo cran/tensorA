@@ -28,9 +28,6 @@ tripledelta.tensor(d,mark1="'",mark2="*",dn=NULL)
   The tripledelta is the tensor mapping a tensor to a corresponding
   diagonal tensor. 
 }
-\references{
-  
-}
 \seealso{
   \code{\link{delta.tensor}}, \code{\link{diag.tensor}} 
 }

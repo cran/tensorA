@@ -22,8 +22,6 @@ delta.tensor(d,mark="'",dn=NULL,by=NULL)
       j_n}=\delta_{i_1j_1}\ldots\delta_{i_nj_n}}{
   E_{i_1...i_n j_1...j_n}=\delta_{i_1j_1}...\delta_{i_n j_n}}
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

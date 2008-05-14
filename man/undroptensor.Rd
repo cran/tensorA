@@ -19,10 +19,6 @@ undrop.tensor(A,name,pos=1)
 \details{
   The function is a pure convenience function.
 }
-\references{
-}
-\seealso{
-}
 \examples{
 A <- to.tensor(1:4,c(a=2,b=2))
 undrop.tensor(A,"i")

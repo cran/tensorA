@@ -29,10 +29,6 @@ toPos.tensor(M,l=NULL,mnames=names(dim(M)),by=NULL,...,both=FALSE,missing.ok=FAL
   The function is only here to provide a consistent interface which
   provides the same functionality for positions and characters.
 }
-\references{
-}
-\seealso{
-}
 \examples{
 A <- to.tensor(1:30,c(a=2,b=3,c=5))
 toPos.tensor(A,c("b","c"))
@@ -40,4 +36,4 @@ toPos.tensor(A,c(2,1))     # only returns the values
 toPos.tensor(A,c("^a"),both=TRUE)
 }
 \author{K. Gerald van den Boogaart}
-\keyword{}
+\keyword{arith}

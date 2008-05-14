@@ -25,8 +25,6 @@ untensor(X,i=NULL,name=NULL,pos=1,by=NULL)
 \details{
   The dimensions to be removed are gathered and 
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

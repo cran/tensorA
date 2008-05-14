@@ -25,8 +25,6 @@ diag.tensor(X,mark="'",dn=NULL,by=NULL)
   E_{i_1...i_n j_1...j_n}=\delta_{i_1j_1}...\delta_{i_n j_n}
   }
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

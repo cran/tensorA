@@ -17,9 +17,6 @@ is.tensor(X)
   This is a simple convenience function to check for the property of
   being a tensor.
 }
-\references{
-  
-}
 \seealso{
   \code{\link{to.tensor}}
 }

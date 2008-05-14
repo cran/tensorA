@@ -246,7 +246,7 @@ diagmul.tensor <- function(X,i=names(D),D,j=i,by=NULL) {
   names(X)[c(toPos.tensor(X,i),toPos.tensor(X,by))] <- ndims
   names(D)[c(toPos.tensor(D,j),toPos.tensor(D,by))] <- ndims
   erg <- mul.tensor(X,c(),D,c(),by=ndims)
-  print(dim(erg))
+  #print(dim(erg))
   names(erg)[toPos.tensor(erg,ndims)]<-odims
   erg
 }

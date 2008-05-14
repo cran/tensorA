@@ -22,8 +22,10 @@ chol.tensor(X,i,j,...,name="lambda")
 }
 \details{
   A tensor can be seen as a linear mapping of a tensor to a tensor. Let
-  denote \eqn{R_i} the space of real tensors with dimensions \eqn{i_1...i_d}.
-  \item{chol.tensor}{ Computes for a  tensor
+  denote \eqn{R_i} the space of real tensors with dimensions
+  \eqn{i_1...i_d}.
+  \itemize{
+  \item{chol.tensor}{Computes for a  tensor
   \eqn{ a_{i_1 \ldots i_dj_1 \ldots j_d} }{ a_{i_1...i_dj_1...j_d} } representing a positive definit mapping
   form \eqn{R_j}{R_j} to \eqn{R_i}{R_j} with equal dimension structure in \eqn{i}{i}
   and \eqn{j}{j} its "Cholesky" decomposition
@@ -33,11 +35,10 @@ chol.tensor(X,i,j,...,name="lambda")
   }
 }
 }
+}
 \note{
   A \code{by} argument is not necessary, since both processing
   dimensions have to be given.
-}
-\references{
 }
 \seealso{
   \code{\link{to.tensor}}, \code{\link{svd.tensor}}

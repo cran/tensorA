@@ -26,9 +26,6 @@ as.tensor(X,...)
 } \value{
   a tensor containing the same data as X
 }
-\references{
-  
-}
 \note{
   You should typically use the \code{\link{to.tensor}} to generate a
   tensor, when you want to write vectorizable functions for tensors.
@@ -40,5 +37,5 @@ as.tensor(X,...)
 A <- diag(5)
 as.tensor(A)
 }
-\author{}
-\keyword{}
+\author{K. Gerald van den Boogaart}
+\keyword{arith}

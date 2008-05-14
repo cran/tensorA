@@ -24,12 +24,12 @@ svd.tensor(X,i,j=NULL,...,name="lambda",by=NULL)
 \details{
   A tensor can be seen as a linear mapping of a tensor to a tensor. Let
   denote \eqn{R_i} the space of real tensors with dimensions \eqn{i_1...i_d}.
+  \itemize{
   \item{svd.tensor}{Computes a singular value decomposition
   \eqn{u_{i_1...i_d\lambda{}}},\eqn{d_\lambda{}}, \eqn{v_{j_1...j_l}\lambda{}} such
   that u and v correspond to orthogonal mappings from \eqn{R_\lambda{}} to
   \eqn{R_i} or \eqn{R_j} respectively.}
-}
-\references{
+  }
 }
 \seealso{
   \code{\link{to.tensor}}, \code{\link{to.matrix.tensor}},

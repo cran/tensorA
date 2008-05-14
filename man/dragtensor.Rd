@@ -69,8 +69,6 @@ as.contravariate(x,...)
   identity matrix if the enclosing the geometry is represented by the
   orthonormal basis and ordinary scalar product.  
 }
-\references{
-}
 \seealso{
   \code{\link{riemann.tensor}}, \code{\link{to.tensor}}, \code{\link{Tensor}}
 }

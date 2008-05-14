@@ -19,8 +19,6 @@ level.tensor(X,...)
   without a dim attribute get level 1 if they are of length > 1 and are
   marked as scalars by 0 level otherwise.
 }
-\references{
-}
 \seealso{
   \code{\link{to.tensor}}
 }

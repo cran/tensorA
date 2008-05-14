@@ -30,8 +30,6 @@ power.tensor(X,i,j,p=0.5,by=NULL)
   conditions is checked. 
 }
 \note{symmetry of the matrix is assumed but not checked.}
-\references{
-}
 \seealso{
   \code{\link{svd.tensor}},
 }

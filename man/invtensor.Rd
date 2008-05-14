@@ -26,9 +26,9 @@ inv.tensor(X,i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
 }
 \details{
   A tensor can be seen as a linear mapping of a tensor to a tensor. 
-  \item{inv.tensor}{ Computes the inverse of the mapping}
-}
-\references{
+  \itemize{
+    \item{inv.tensor}{ Computes the inverse of the mapping}
+  }
 }
 \seealso{
   \code{\link{to.tensor}}, \code{\link{solve.tensor}}, \code{\link{svd.tensor}}

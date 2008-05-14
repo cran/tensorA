@@ -71,8 +71,6 @@ be given the
   assumed index sequence of the result afterwards.
 
 }
-\references{
-}
 \seealso{
   \code{\link{reorder.tensor}}, \code{\link{names<-.tensor}}, \code{\link{[[.tensor}}
 }

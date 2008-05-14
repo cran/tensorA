@@ -32,9 +32,6 @@
   always the same as the names of the dimensions and to ensure that
   always at least a list with the right length and names. 
 }
-\references{
-  
-}
 \seealso{
   \code{\link{mul.tensor}} 
 }
