@@ -9,6 +9,9 @@ if(FALSE) {
   library(tensorA,lib.loc="../../tensorA.Rcheck")
 }
 
+set.seed(23)
+
+
 summary.tensor <- function(x,...) {
   n <- level.tensor(x)
   d <- dim(x)

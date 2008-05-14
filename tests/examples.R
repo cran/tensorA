@@ -22,6 +22,7 @@ if(FALSE) {
 to.tensor(c(1,2,3))
 dim(to.tensor(c(1,2,3)))
 
+set.seed(23)
 
 A <- to.tensor(1:20,c(U=2,V=2,W=5))
 A
