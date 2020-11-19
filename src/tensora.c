@@ -1,8 +1,16 @@
 #include <R.h>
+#include <Rinternals.h>
+
 
 #define xx(i,j,l) (X[(i)+dimx[0]*((j)+dimx[1]*(l))])
 #define yy(i,j,l) (Y[(i)+dimy[0]*((j)+dimy[1]*(l))])
 #define ee(i,j,l) (E[(i)+dime[0]*((j)+dime[1]*(l))])
+
+static R_NativePrimitiveArgType tensoramulhelper_t[] = {
+  /* int *dimx, int *dimy, int *dime,  double *X, double *Y, double *E*/
+  INTSXP,    INTSXP,    INTSXP,     REALSXP,   REALSXP,   REALSXP
+};
+
 /**
 The function performs many matrix multiplications in parallel.
 */          
@@ -32,6 +40,12 @@ extern void tensoramulhelper(int *dimx,int *dimy,int *dime,
 #define yyY(i,j,l) (Y[((i)+dimy[0]*((j)+dimy[1]*(l)))].imaginaripart)
 #define eeY(i,j,l) (E[((i)+dime[0]*((j)+dime[1]*(l)))].imaginaripart)
 
+
+static R_NativePrimitiveArgType tensoraCmulhelper_t[] = {
+  /* int *dimx, int *dimy, int *dime, Rcomplex *X, Rcomplex *Y, Rcomplex *E*/
+  INTSXP,    INTSXP,    INTSXP,    CPLXSXP,    CPLXSXP,   CPLXSXP
+};
+
 extern void tensoraCmulhelper(int *dimx,int *dimy,int *dime,
 			      Rcomplex *X,
 			      Rcomplex *Y,
@@ -56,3 +70,16 @@ extern void tensoraCmulhelper(int *dimx,int *dimy,int *dime,
 }
 
 
+static R_CMethodDef cMethods[] = {
+  {"tensoramulhelper", (DL_FUNC) &tensoramulhelper, 6, tensoramulhelper_t},
+  {"tensoraCmulhelper", (DL_FUNC) &tensoraCmulhelper, 6, tensoraCmulhelper_t},
+  {NULL, NULL, 0}
+};
+
+
+void R_init_tensora(DllInfo *info)
+{
+  R_registerRoutines(info, cMethods, NULL, NULL, NULL);
+  R_useDynamicSymbols(info, FALSE);
+  R_forceSymbols(info, TRUE);
+}

@@ -6,8 +6,8 @@
   Mean and variance of tensors again tensors. 
 }
 \usage{
-mean.tensor(x,along,...,na.rm=FALSE)
-var.tensor(x,y=NULL,...,along,by=NULL,na.rm=FALSE,mark="'")
+ \method{mean}{tensor}(x,along,...,na.rm=FALSE)
+ \method{var}{tensor}(x,y=NULL,...,along,by=NULL,na.rm=FALSE,mark="'")
 }
 \arguments{
   \item{x}{(set of) dataset(s) of tensors represented by a tensor}

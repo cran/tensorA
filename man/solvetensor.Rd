@@ -7,7 +7,7 @@
 	norm.
 }
 \usage{
-solve.tensor(a,b,i,j=i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
+ \method{solve}{tensor}(a,b,i,j=i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
 }
 \arguments{
   \item{a}{The a of ax=b}

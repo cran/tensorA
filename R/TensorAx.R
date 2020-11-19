@@ -171,7 +171,7 @@ names.tensor <- function(x) {
   if( length(value) != length(unique(value)))
     warning("Duplicated names assigned to tensor ",paste(value,col=" "))
   dn <- dimnames(x)
-  names(dim(x)) <- value   # gültig
+  names(dim(x)) <- value   # gueltig
   names(dn) <- value
   dimnames(x) <- dn
   x
@@ -287,7 +287,7 @@ pos.tensor <- function(d) {
   E
 }
 
-# Sortiert die Tensorindices so um, daß 
+# Sortiert die Tensorindices so um, dass
 # die in i genannten in dieser Reihenfolge zuerst kommen
 
 reorder.tensor <- function(x,i=NULL,...,by=NULL)	{
@@ -356,7 +356,7 @@ reorder.tensor <- function(x,i=NULL,...,by=NULL)	{
 
 
 
-# Gibt die zur Umsortierung im Speicher nötige Indexreihen
+# Gibt die zur Umsortierung im Speicher noetige Indexreihen
 # - folge um die in i genannten Indices nach vorn zu holen
 
 reorder.tidx <- function(x,i,...){
@@ -373,7 +373,7 @@ reorder.tidx <- function(x,i,...){
 }
 
 # Macht aus einer Reihe nach vorne zu holender Indices
-# die komplette umsortierung, so daß alle in ihrer neuen 
+# die komplette umsortierung, so dass alle in ihrer neuen 
 # Reihenfolge auftreten
 
 gsi.fullreorder <- function(d,first=NULL,last=NULL){
@@ -384,7 +384,7 @@ gsi.fullreorder <- function(d,first=NULL,last=NULL){
 }
 
 #
-# Wie gsi.fullreorder, nur daß die indices i nach hinten
+# Wie gsi.fullreorder, nur dass die indices i nach hinten
 # geschoben werden
 #
 #gsi.fullreorder.anti <- function(d,i){
@@ -405,13 +405,13 @@ gsi.weightedndx <- function(d,w){
   ndx
 }
 
-# erzeugt den multiplicator für jeden Arrayindex
+# erzeugt den multiplicator fuer jeden Arrayindex
 
 gsi.weights   <- function(d){
   cumprod(c(1,d[-length(d)]))
 }
 
-# Gibt den Vektor der übrigen indices zurück
+# Gibt den Vektor der uebrigen indices zurueck
 gsi.rest <- function(d,i){
   if( length(i)==0 )
     return(1:length(d))
@@ -461,8 +461,8 @@ gsi.without <- function(l,i) if(length(i)>0) l[-i] else l
 
 
 #
-# Collabiert zwei tensoren über die genannten Indices
-# i für X und Y für j
+# Collabiert zwei tensoren ueber die genannten Indices
+# i fuer X und Y fuer j
 #
 
 mul.tensor <- function(X,i=c(),Y,j=i,by=NULL){
@@ -524,7 +524,7 @@ mul.tensor <- function(X,i=c(),Y,j=i,by=NULL){
             as.complex(X[xtidx]),
             as.complex(Y[ytidx]),
             erg=complex(outerx*outery*para),
-            NAOK=TRUE,DUP=FALSE
+            NAOK=TRUE ## ,DUP=FALSE
             )$erg
   } else {
     E <- .C(tensoramulhelper,
@@ -534,7 +534,7 @@ mul.tensor <- function(X,i=c(),Y,j=i,by=NULL){
             as.numeric(X[xtidx]),
             as.numeric(Y[ytidx]),
             erg=numeric(outerx*outery*para),
-            NAOK=TRUE,DUP=FALSE
+            NAOK=TRUE# ,DUP=FALSE
             )$erg
        #E <- matrix(X[xtidx],ncol=inner)%*%
       #  matrix(Y[ytidx],nrow=inner)
@@ -566,7 +566,7 @@ rep.tensor <- function(x,times,pos=1,name="i",...) {
 
 
 #
-# collabiert Tensor (spur bilden) über die Indices i,j
+# collabiert Tensor (spur bilden) ueber die Indices i,j
 # (auch listen sind erlaubt,
 #  dann werden mehere paare collabiert)
 
