@@ -35,7 +35,7 @@ opnorm(X,...)
 }
 \details{
   
-  \itemize{
+  \describe{
   \item{norm}{
     The function computes the Euclidean norm, which is the square root
     over the sum of all entries and not the operator norm. }

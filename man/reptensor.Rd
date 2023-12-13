@@ -28,7 +28,7 @@
   \code{each} argument is not necessary, since sequence of the dimensions
   can more precisely be controlled by pos. Another problem is the a
   ambiguity between \code{rep(x,3)} and \code{rep(x,c(3))} as a special
-  case of {rep(x,c(3,2))}. If the second is wanted it can be forced by
+  case of \code{rep(x,c(3,2))}. If the second is wanted it can be forced by
   \code{rep(x,c(3),NA)} through setting the name argument to NA. 
 }
 \seealso{

@@ -26,7 +26,7 @@ inv.tensor(X,i,...,allowSingular=FALSE,eps=1E-10,by=NULL)
 }
 \details{
   A tensor can be seen as a linear mapping of a tensor to a tensor. 
-  \itemize{
+  \describe{
     \item{inv.tensor}{ Computes the inverse of the mapping}
   }
 }

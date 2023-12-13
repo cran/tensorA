@@ -28,7 +28,7 @@
   A tensor can be seen as a linear mapping of a tensor to a tensor. Let
   denote \eqn{R_i} the space of real tensors with dimensions
   \eqn{i_1...i_d}.
-  \itemize{
+  \describe{
   \item{solve.tensor}{Solves the equation for
   \eqn{a_{i_1...i_dk_1...k_p}}, \eqn{b_{j_1...j_dl_1...l_q}} and
   \eqn{x_{k_1...k_pl_1...l_q}} the equation  
